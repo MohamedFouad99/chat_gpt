@@ -1,5 +1,5 @@
 import 'package:chat_gpt/constant/app_routes.dart';
-import 'package:chat_gpt/constant/my_theme.dart';
+import 'package:chat_gpt/constant/restart_widget.dart';
 import 'package:chat_gpt/controller/theme_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -14,7 +14,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //get storage
   await GetStorage.init();
-  runApp(const MyApp());
+  runApp(const RestartWidget(child: MyApp()));
 }
 
 class MyApp extends StatefulWidget {
@@ -35,7 +35,6 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       defaultTransition: t.Transition.fadeIn,
       theme: themeController.currentTheme.value,
-      //  MyThemeData.lightTheme,
       initialRoute: Routes.splash,
       getPages: Routes.routes,
     );
