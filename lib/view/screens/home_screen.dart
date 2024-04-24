@@ -1,5 +1,6 @@
 // ignore_for_file: deprecated_member_use
 
+import 'package:chat_gpt/constant/app_routes.dart';
 import 'package:chat_gpt/constant/my_theme.dart';
 import 'package:chat_gpt/constant/restart_widget.dart';
 import 'package:chat_gpt/controller/theme_controller.dart';
@@ -24,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
     ThemeController themeController = Get.put(ThemeController());
     double screenHeight = MediaQuery.of(context).size.height;
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.background,
+      backgroundColor: Theme.of(context).colorScheme.onPrimaryContainer,
       body: SafeArea(
         child: Column(
           children: [
@@ -35,14 +36,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   HomeRowWidget(
                     icon: 'assets/icons/chat_bold_icon.svg',
                     text: 'New Chat',
-                    onTap: () {},
+                    onTap: () {
+                      Get.toNamed(Routes.chat);
+                    },
                     hasAnotherRow: true,
                     isUpgrade: false,
                     hasOptions: false,
                     hasDivider: true,
                   ),
                   SizedBox(
-                    height: screenHeight * .45,
+                    height: screenHeight * .48,
                     width: double.infinity,
                     child: ListView.builder(
                       shrinkWrap: true,

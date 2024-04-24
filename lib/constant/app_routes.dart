@@ -1,3 +1,4 @@
+import 'package:chat_gpt/view/screens/chat_screen.dart';
 import 'package:chat_gpt/view/screens/home_screen.dart';
 import 'package:chat_gpt/view/screens/onboarding_screen.dart';
 import 'package:chat_gpt/view/screens/splash_screen.dart';
@@ -13,6 +14,7 @@ class Routes {
   static const String splash = '/splash';
   static const String onboarding = '/onboarding';
   static const String home = '/home';
+  static const String chat = '/chat';
 
   Routes._();
   static final routes = [
@@ -27,6 +29,10 @@ class Routes {
     GetPage(
       name: '/home',
       page: () => const HomeScreen(),
+    ),
+    GetPage(
+      name: '/chat',
+      page: () => const ChatScreen(),
     )
   ];
 }
@@ -41,6 +47,10 @@ Widget Function(BuildContext) routeGenerator = (BuildContext context) {
 
     case Routes.home:
       return const HomeScreen();
+
+    case Routes.chat:
+      return const ChatScreen();
+
     default:
       return const SplashScreen();
   }
