@@ -1,7 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api, deprecated_member_use
 
+import 'package:chat_gpt/constant/app_routes.dart';
 import 'package:flutter/material.dart';
-
 import 'dart:async';
 import 'package:flutter_svg/svg.dart';
 
@@ -22,6 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
 
     Timer(const Duration(seconds: 3), () {
+      Navigator.pushReplacementNamed(context, Routes.onboarding);
       // Navigate to the next screen here
       // For example, you can use Navigator.pushReplacement() to navigate to your home screen
     });

@@ -1,4 +1,5 @@
 import 'package:chat_gpt/constant/app_routes.dart';
+import 'package:chat_gpt/constant/my_theme.dart';
 import 'package:chat_gpt/controller/theme_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -11,10 +12,8 @@ import 'package:get_storage/get_storage.dart';
 // Description:This is the main function of the application.
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
   //get storage
   await GetStorage.init();
-
   runApp(const MyApp());
 }
 
@@ -36,7 +35,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       defaultTransition: t.Transition.fadeIn,
       theme: themeController.currentTheme.value,
-      //   MyThemeData.darkTheme,
+      //  MyThemeData.lightTheme,
       initialRoute: Routes.splash,
       getPages: Routes.routes,
     );

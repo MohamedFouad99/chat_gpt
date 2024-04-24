@@ -19,6 +19,7 @@ class MyThemeData {
   static Color colorLightBlack = const Color(0xFF343541);
   static Color colorPrimary = const Color(0xFF10A37F);
   static Color colorRed = const Color(0xFFDF1C1C);
+  static Color colorGrey = const Color(0xFFFFFFFF).withOpacity(.2);
   static final ThemeData lightTheme = ThemeData(
     useMaterial3: false,
     colorScheme: ColorScheme(
@@ -31,10 +32,10 @@ class MyThemeData {
       onError: colorRed,
       onSurface: colorWhite,
       surface: colorLightBlack,
-      onBackground: colorWhite,
+      onBackground: colorWhite.withOpacity(.8),
       brightness: Brightness.light,
     ),
-    scaffoldBackgroundColor: colorLightBlack,
+    scaffoldBackgroundColor: colorWhite,
     textTheme: TextTheme(
       titleLarge: TextStyle(
         fontFamily: 'Raleway',
@@ -47,9 +48,9 @@ class MyThemeData {
       titleMedium: TextStyle(
         fontFamily: 'Raleway',
         fontStyle: FontStyle.normal,
-        fontSize: 22,
-        color: colorWhite,
-        fontWeight: FontWeight.w600,
+        fontSize: 32,
+        color: colorPrimary,
+        fontWeight: FontWeight.w700,
         height: 1.0,
       ),
       titleSmall: TextStyle(
@@ -59,6 +60,14 @@ class MyThemeData {
         color: colorWhite,
         fontWeight: FontWeight.w500,
         height: 1.0,
+      ),
+      bodyLarge: TextStyle(
+        fontFamily: 'Raleway',
+        fontStyle: FontStyle.normal,
+        fontSize: 16,
+        color: colorLightBlack,
+        fontWeight: FontWeight.w600,
+        height: 1.2,
       ),
     ),
   );
@@ -74,10 +83,10 @@ class MyThemeData {
       onError: colorRed,
       onSurface: colorWhite,
       surface: colorLightBlack,
-      onBackground: colorWhite,
+      onBackground: colorGrey,
       brightness: Brightness.dark,
     ),
-    scaffoldBackgroundColor: colorBlack,
+    scaffoldBackgroundColor: colorLightBlack,
     textTheme: TextTheme(
       titleLarge: TextStyle(
         fontFamily: 'Raleway',
@@ -90,9 +99,9 @@ class MyThemeData {
       titleMedium: TextStyle(
         fontFamily: 'Raleway',
         fontStyle: FontStyle.normal,
-        fontSize: 22,
+        fontSize: 32,
         color: colorWhite,
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w700,
         height: 1.0,
       ),
       titleSmall: TextStyle(
@@ -102,6 +111,14 @@ class MyThemeData {
         color: colorWhite,
         fontWeight: FontWeight.w500,
         height: 1.0,
+      ),
+      bodyLarge: TextStyle(
+        fontFamily: 'Raleway',
+        fontStyle: FontStyle.normal,
+        fontSize: 16,
+        color: colorWhite,
+        fontWeight: FontWeight.w600,
+        height: 1.2,
       ),
     ),
   );
