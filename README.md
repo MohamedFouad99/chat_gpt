@@ -31,23 +31,26 @@ o Splash Screen
 
 
 <div style="display: flex;">
-    <img src="assets/images/r5.jpg" alt="Splash Screen" style="width: 25%;">
-    <img src="assets/images/r7.jpg" alt="Splash Screen" style="width: 25%;">
-    <img src="assets/images/r10.jpg" alt="Onboarding1 Screen" style="width: 25%;">
-    <img src="assets/images/r6.jpg" alt="Splash Screen" style="width: 25%;">
+    <img src="assets/images/r5.jpg" alt="Splash Screen" style="width: 33.33%;">
+    <img src="assets/images/r7.jpg" alt="Splash Screen" style="width: 33.33%;">
+    <img src="assets/images/r10.jpg" alt="Onboarding1 Screen" style="width: 33.33%;">
 </div>
 <div style="display: flex;">
-    <img src="assets/images/r4.jpg" alt="Onboarding2 Screen" style="width: 25%;">
-    <img src="assets/images/r9.jpg" alt="Splash Screen" style="width: 25%;">
-    <img src="assets/images/r3.jpg" alt="Onboarding3 Screen" style="width: 25%;">
-    <img src="assets/images/r11.jpg" alt="Splash Screen" style="width: 25%;">
+    <img src="assets/images/r6.jpg" alt="Splash Screen" style="width: 33.33%;">
+    <img src="assets/images/r4.jpg" alt="Onboarding2 Screen" style="width: 33.33%;">
+    <img src="assets/images/r9.jpg" alt="Splash Screen" style="width: 33.33%;">
 </div>
 <div style="display: flex;">
-    <img src="assets/images/r1.jpg" alt="Home Screen" style="width: 25%;">
-    <img src="assets/images/r8.jpg" alt="Splash Screen" style="width: 25%;">
-    <img src="assets/images/r2.jpg" alt="Chat Screen" style="width: 25%;">
-    <img src="assets/images/r12.jpg" alt="Splash Screen" style="width: 25%;">
+    <img src="assets/images/r3.jpg" alt="Onboarding3 Screen" style="width: 33.33%;">
+    <img src="assets/images/r11.jpg" alt="Splash Screen" style="width: 33.33%;">
+    <img src="assets/images/r1.jpg" alt="Home Screen" style="width: 33.33%;">
 </div>
+<div style="display: flex;">
+    <img src="assets/images/r8.jpg" alt="Splash Screen" style="width: 33.33%;">
+    <img src="assets/images/r2.jpg" alt="Chat Screen" style="width: 33.33%;">
+    <img src="assets/images/r12.jpg" alt="Splash Screen" style="width: 33.33%;">
+</div>
+
 
 
 
