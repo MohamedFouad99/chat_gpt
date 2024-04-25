@@ -4,4 +4,3 @@
 // Last Modified:24/April/2024
 // Description:This is a class that defines the API constants for the application.
 String BASE_URL = "https://api.openai.com/v1";
-String API_KEY = 'paid api key';
