@@ -31,6 +31,8 @@ o Splash Screen
 
 
 ![Splash Screen](assets/images/r5.jpg)
+
+
 ![Splash Screen Dark] (assets/images/r7.jpg)
 
 • Setup
