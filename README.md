@@ -31,11 +31,11 @@ o Splash Screen
 
 
 ![Splash Screen](assets/images/r5.jpg)![Splash Screen](assets/images/r7.jpg)
-![Onbording1 Screen](assets/images/r5.jpg)![Splash Screen](assets/images/r7.jpg)
-![Onbording12 Screen](assets/images/r5.jpg)![Splash Screen](assets/images/r7.jpg)
-![Onbording3 Screen](assets/images/r5.jpg)![Splash Screen](assets/images/r7.jpg)
-![Home Screen](assets/images/r5.jpg)![Splash Screen](assets/images/r7.jpg)
-![Chat Screen](assets/images/r5.jpg)![Splash Screen](assets/images/r7.jpg)
+![Onbording1 Screen](assets/images/r10.jpg)![Splash Screen](assets/images/r6.jpg)
+![Onbording12 Screen](assets/images/r4.jpg)![Splash Screen](assets/images/r9.jpg)
+![Onbording3 Screen](assets/images/r3.jpg)![Splash Screen](assets/images/r11.jpg)
+![Home Screen](assets/images/r1.jpg)![Splash Screen](assets/images/r8.jpg)
+![Chat Screen](assets/images/r2.jpg)![Splash Screen](assets/images/r12.jpg)
 
 
 
