@@ -25,9 +25,7 @@ o  24/7 Availability: Whether it's day or night, ChatGPT Companion is always rea
 
 Here are some screenshots of the app:
 
-o Splash Screen
 
- It is an initial screen that appears for a number of seconds.
 
 
 <div style="display: flex;">
