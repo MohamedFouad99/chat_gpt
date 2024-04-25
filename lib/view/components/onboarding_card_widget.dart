@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 // Date:24/April/2023
 // Last Modified:24/April/2023
 // Description:This is the onboarding card widget of the application.
+// It is a class that extends StatelessWidget and it is responsible for displaying the onboarding card widget.
+// The class takes in one parameter, description.
 class OnboardingCardWidget extends StatelessWidget {
   const OnboardingCardWidget({
     super.key,

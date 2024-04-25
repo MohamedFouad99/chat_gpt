@@ -26,22 +26,28 @@ class CustomFormFiled extends StatelessWidget {
     super.key,
     this.controller,
     this.onChange,
+    this.onFieldSubmitted,
     this.onPressedSend,
   });
 
   final TextEditingController? controller;
   final void Function(String?)? onChange;
+  final void Function(String?)? onFieldSubmitted;
   final void Function()? onPressedSend;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 16, right: 10),
+      padding: const EdgeInsets.only(
+        left: 16,
+        right: 16,
+      ),
       child: TextFormField(
         keyboardType: TextInputType.text,
         style: Theme.of(context).textTheme.bodySmall,
         controller: controller,
         onChanged: onChange,
+        onFieldSubmitted: onFieldSubmitted,
         textAlign: TextAlign.start,
         cursorColor: Theme.of(context).colorScheme.primary,
         decoration: InputDecoration(
@@ -56,7 +62,7 @@ class CustomFormFiled extends StatelessWidget {
           prefix: const SizedBox(
             height: 15,
           ),
-          hintText: 'write your question here..',
+          hintText: 'Write your question here..',
           hintStyle: Theme.of(context).textTheme.bodySmall,
           fillColor: Colors.grey.withOpacity(.5),
           //const Color(0xFFFFFFFF).withOpacity(.5),

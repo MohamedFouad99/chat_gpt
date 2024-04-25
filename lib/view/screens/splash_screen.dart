@@ -1,8 +1,9 @@
 // ignore_for_file: library_private_types_in_public_api, deprecated_member_use
 
+import 'dart:async';
+
 import 'package:chat_gpt/constant/app_routes.dart';
 import 'package:flutter/material.dart';
-import 'dart:async';
 import 'package:flutter_svg/svg.dart';
 
 // By:MohamedFouad

@@ -1,10 +1,13 @@
-import 'package:chat_gpt/constant/app_routes.dart';
-import 'package:chat_gpt/constant/restart_widget.dart';
-import 'package:chat_gpt/controller/theme_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_navigation/src/routes/transitions_type.dart' as t;
 import 'package:get_storage/get_storage.dart';
+import 'package:provider/provider.dart';
+
+import 'constant/app_routes.dart';
+import 'constant/restart_widget.dart';
+import 'controller/chats_controller.dart';
+import 'controller/theme_controller.dart';
 
 // By:MohamedFouad
 // Date:24/April/2024
@@ -30,13 +33,20 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     //
     ThemeController themeController = Get.put(ThemeController());
-    return GetMaterialApp(
-      initialBinding: BindingsBuilder(() {}),
-      debugShowCheckedModeBanner: false,
-      defaultTransition: t.Transition.fadeIn,
-      theme: themeController.currentTheme.value,
-      initialRoute: Routes.splash,
-      getPages: Routes.routes,
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          create: (_) => ChatController(),
+        ),
+      ],
+      child: GetMaterialApp(
+        initialBinding: BindingsBuilder(() {}),
+        debugShowCheckedModeBanner: false,
+        defaultTransition: t.Transition.fadeIn,
+        theme: themeController.currentTheme.value,
+        initialRoute: Routes.splash,
+        getPages: Routes.routes,
+      ),
     );
   }
 }

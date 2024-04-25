@@ -10,11 +10,15 @@ import 'package:get/get.dart';
 // Date:24/April/2024
 // Last Modified:24/April/2024
 // Description:This is the home row widget of the application.
+// It is a class that extends StatelessWidget and it is responsible for displaying the home row widget.
+// The class takes in several parameters, including onTap, onDeleteTap, icon, text, hasAnotherRow,
+// isUpgrade, hasOptions, and hasDivider.
+// The build method returns a Column widget that contains a SizedBox widget and a Row widget.
 class HomeRowWidget extends StatelessWidget {
   const HomeRowWidget({
     super.key,
     required this.onTap,
-    this.onDeleteTap,
+    this.onOptionTap,
     required this.icon,
     required this.text,
     required this.hasAnotherRow,
@@ -23,7 +27,7 @@ class HomeRowWidget extends StatelessWidget {
     required this.hasDivider,
   });
   final void Function() onTap;
-  final void Function()? onDeleteTap;
+  final void Function()? onOptionTap;
   final String icon;
   final String text;
   final bool hasAnotherRow;
@@ -67,10 +71,13 @@ class HomeRowWidget extends StatelessWidget {
                     children: [
                       hasOptions
                           ? InkWell(
-                              onTap: onDeleteTap,
+                              onTap: onOptionTap,
                               child: SvgPicture.asset(
-                                'assets/icons/delete_icon.svg',
-                                color: MyThemeData.colorRed.withOpacity(.5),
+                                'assets/icons/option_icon.svg',
+                                color: themeController.currentTheme.value ==
+                                        MyThemeData.lightTheme
+                                    ? MyThemeData.colorPrimary
+                                    : null,
                               ))
                           : const SizedBox(),
                       SizedBox(width: screenWidth * .08),
