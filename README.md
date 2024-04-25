@@ -30,12 +30,25 @@ o Splash Screen
  It is an initial screen that appears for a number of seconds.
 
 
-![Splash Screen](assets/images/r5.jpg)![Splash Screen](assets/images/r7.jpg)
-![Onbording1 Screen](assets/images/r10.jpg)![Splash Screen](assets/images/r6.jpg)
-![Onbording12 Screen](assets/images/r4.jpg)![Splash Screen](assets/images/r9.jpg)
-![Onbording3 Screen](assets/images/r3.jpg)![Splash Screen](assets/images/r11.jpg)
-![Home Screen](assets/images/r1.jpg)![Splash Screen](assets/images/r8.jpg)
-![Chat Screen](assets/images/r2.jpg)![Splash Screen](assets/images/r12.jpg)
+<div style="display: flex;">
+    <img src="assets/images/r5.jpg" alt="Splash Screen" style="width: 25%;">
+    <img src="assets/images/r7.jpg" alt="Splash Screen" style="width: 25%;">
+    <img src="assets/images/r10.jpg" alt="Onboarding1 Screen" style="width: 25%;">
+    <img src="assets/images/r6.jpg" alt="Splash Screen" style="width: 25%;">
+</div>
+<div style="display: flex;">
+    <img src="assets/images/r4.jpg" alt="Onboarding2 Screen" style="width: 25%;">
+    <img src="assets/images/r9.jpg" alt="Splash Screen" style="width: 25%;">
+    <img src="assets/images/r3.jpg" alt="Onboarding3 Screen" style="width: 25%;">
+    <img src="assets/images/r11.jpg" alt="Splash Screen" style="width: 25%;">
+</div>
+<div style="display: flex;">
+    <img src="assets/images/r1.jpg" alt="Home Screen" style="width: 25%;">
+    <img src="assets/images/r8.jpg" alt="Splash Screen" style="width: 25%;">
+    <img src="assets/images/r2.jpg" alt="Chat Screen" style="width: 25%;">
+    <img src="assets/images/r12.jpg" alt="Splash Screen" style="width: 25%;">
+</div>
+
 
 
 
