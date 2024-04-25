@@ -30,7 +30,8 @@ o Splash Screen
  It is an initial screen that appears for a number of seconds.
 
 
-![Splash Screen](assets/images/r5.jpg)![Splash Screen] (assets/images/r7.jpg)
+![Splash Screen](assets/images/r5.jpg)
+![Splash Screen] (assets/images/r7.jpg)
 
 • Setup
 
