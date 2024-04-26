@@ -1,4 +1,5 @@
 •  Chat GPT App using API
+
 Welcome to ChatGPT Companion, your personal conversational assistant powered by state-of-the-art AI. With ChatGPT Companion,
 you can engage in natural and meaningful conversations on a wide range of topics, whether you need assistance, want to brainstorm ideas
 , or simply seek friendly conversation.
